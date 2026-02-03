@@ -1,0 +1,243 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Shopping Landing Page Mock Data Schemas",
+  "description": "JSON Schema definitions for all mock data files used in the shopping landing page",
+
+  "definitions": {
+    "HeroContent": {
+      "type": "object",
+      "required": ["id", "headline", "description", "ctaText", "ctaLink", "backgroundImageUrl"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier"
+        },
+        "headline": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100,
+          "description": "Main headline text"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300,
+          "description": "Supporting description text"
+        },
+        "ctaText": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 30,
+          "description": "Call-to-action button text"
+        },
+        "ctaLink": {
+          "type": "string",
+          "description": "CTA destination URL or path"
+        },
+        "backgroundImageUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "Hero background image URL"
+        }
+      }
+    },
+
+    "Product": {
+      "type": "object",
+      "required": ["id", "name", "imageUrl", "price", "link"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique product identifier"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100,
+          "description": "Product name"
+        },
+        "imageUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "Product image URL"
+        },
+        "price": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Current price in cents"
+        },
+        "originalPrice": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Original price (for sale items)"
+        },
+        "link": {
+          "type": "string",
+          "description": "Product detail page URL"
+        }
+      }
+    },
+
+    "Category": {
+      "type": "object",
+      "required": ["id", "name", "imageUrl", "link"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique category identifier"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 50,
+          "description": "Category name"
+        },
+        "imageUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "Category image URL"
+        },
+        "link": {
+          "type": "string",
+          "description": "Category page URL"
+        }
+      }
+    },
+
+    "Promotion": {
+      "type": "object",
+      "required": ["id", "headline", "description", "ctaText", "ctaLink", "imageUrl"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique promotion identifier"
+        },
+        "headline": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "description": "Promotion headline"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "description": "Promotion details"
+        },
+        "ctaText": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 30,
+          "description": "Action button text"
+        },
+        "ctaLink": {
+          "type": "string",
+          "description": "Promotion destination URL"
+        },
+        "imageUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "Promotional image URL"
+        },
+        "validUntil": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 expiration timestamp"
+        }
+      }
+    },
+
+    "Testimonial": {
+      "type": "object",
+      "required": ["id", "customerName", "rating", "reviewText"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique testimonial identifier"
+        },
+        "customerName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 50,
+          "description": "Customer display name"
+        },
+        "rating": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "description": "Star rating (1-5)"
+        },
+        "reviewText": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500,
+          "description": "Review content"
+        },
+        "avatarUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "Customer avatar image URL"
+        }
+      }
+    },
+
+    "NavigationItem": {
+      "type": "object",
+      "required": ["id", "label", "link", "order"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique navigation item identifier"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 30,
+          "description": "Display label"
+        },
+        "link": {
+          "type": "string",
+          "description": "Navigation destination URL"
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Display order"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/NavigationItem"
+          },
+          "description": "Dropdown sub-items"
+        }
+      }
+    },
+
+    "FooterLink": {
+      "type": "object",
+      "required": ["id", "label", "url", "section"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique footer link identifier"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40,
+          "description": "Link display text"
+        },
+        "url": {
+          "type": "string",
+          "description": "Link destination URL"
+        },
+        "section": {
+          "type": "string",
+          "enum": ["about", "support", "legal", "social"],
+          "description": "Grouping section"
+        }
+      }
+    }
+  }
+}

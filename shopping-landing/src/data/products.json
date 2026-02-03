@@ -1,0 +1,76 @@
+[
+  {
+    "id": "prod-1",
+    "name": "Premium Wireless Headphones",
+    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80",
+    "price": 9999,
+    "originalPrice": 14999,
+    "link": "/products/prod-1"
+  },
+  {
+    "id": "prod-2",
+    "name": "Smart Watch Series 5",
+    "imageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80",
+    "price": 29999,
+    "link": "/products/prod-2"
+  },
+  {
+    "id": "prod-3",
+    "name": "Minimalist Leather Wallet",
+    "imageUrl": "https://images.unsplash.com/photo-1627123424574-724758594e93?w=400&q=80",
+    "price": 4999,
+    "originalPrice": 6999,
+    "link": "/products/prod-3"
+  },
+  {
+    "id": "prod-4",
+    "name": "Organic Cotton T-Shirt",
+    "imageUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&q=80",
+    "price": 2999,
+    "link": "/products/prod-4"
+  },
+  {
+    "id": "prod-5",
+    "name": "Vintage Sunglasses",
+    "imageUrl": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&q=80",
+    "price": 7999,
+    "originalPrice": 9999,
+    "link": "/products/prod-5"
+  },
+  {
+    "id": "prod-6",
+    "name": "Running Sneakers Pro",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80",
+    "price": 12999,
+    "link": "/products/prod-6"
+  },
+  {
+    "id": "prod-7",
+    "name": "Ceramic Coffee Mug Set",
+    "imageUrl": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=400&q=80",
+    "price": 3499,
+    "link": "/products/prod-7"
+  },
+  {
+    "id": "prod-8",
+    "name": "Wireless Charging Pad",
+    "imageUrl": "https://images.unsplash.com/photo-1586816879360-004f5b0c51e5?w=400&q=80",
+    "price": 2499,
+    "originalPrice": 3999,
+    "link": "/products/prod-8"
+  },
+  {
+    "id": "prod-9",
+    "name": "Canvas Backpack",
+    "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&q=80",
+    "price": 5999,
+    "link": "/products/prod-9"
+  },
+  {
+    "id": "prod-10",
+    "name": "Stainless Steel Water Bottle",
+    "imageUrl": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&q=80",
+    "price": 1999,
+    "link": "/products/prod-10"
+  }
+]

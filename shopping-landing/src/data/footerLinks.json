@@ -1,0 +1,98 @@
+[
+  {
+    "id": "footer-1",
+    "label": "About Us",
+    "url": "/about",
+    "section": "about"
+  },
+  {
+    "id": "footer-2",
+    "label": "Careers",
+    "url": "/careers",
+    "section": "about"
+  },
+  {
+    "id": "footer-3",
+    "label": "Press",
+    "url": "/press",
+    "section": "about"
+  },
+  {
+    "id": "footer-4",
+    "label": "Blog",
+    "url": "/blog",
+    "section": "about"
+  },
+  {
+    "id": "footer-5",
+    "label": "Help Center",
+    "url": "/help",
+    "section": "support"
+  },
+  {
+    "id": "footer-6",
+    "label": "Shipping Info",
+    "url": "/shipping",
+    "section": "support"
+  },
+  {
+    "id": "footer-7",
+    "label": "Returns",
+    "url": "/returns",
+    "section": "support"
+  },
+  {
+    "id": "footer-8",
+    "label": "Track Order",
+    "url": "/track-order",
+    "section": "support"
+  },
+  {
+    "id": "footer-9",
+    "label": "Contact Us",
+    "url": "/contact",
+    "section": "support"
+  },
+  {
+    "id": "footer-10",
+    "label": "Privacy Policy",
+    "url": "/privacy",
+    "section": "legal"
+  },
+  {
+    "id": "footer-11",
+    "label": "Terms of Service",
+    "url": "/terms",
+    "section": "legal"
+  },
+  {
+    "id": "footer-12",
+    "label": "Cookie Policy",
+    "url": "/cookies",
+    "section": "legal"
+  },
+  {
+    "id": "footer-13",
+    "label": "Facebook",
+    "url": "https://facebook.com",
+    "section": "social"
+  },
+  {
+    "id": "footer-14",
+    "label": "Instagram",
+    "url": "https://instagram.com",
+    "section": "social"
+  },
+  {
+    "id": "footer-15",
+    "label": "Twitter",
+    "url": "https://twitter.com",
+    "section": "social"
+  },
+  {
+    "id": "footer-16",
+    "label": "Pinterest",
+    "url": "https://pinterest.com",
+    "section": "social"
+  }
+]
