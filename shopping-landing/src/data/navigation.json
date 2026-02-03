@@ -1,0 +1,90 @@
+[
+  {
+    "id": "nav-1",
+    "label": "Home",
+    "link": "/",
+    "order": 1
+  },
+  {
+    "id": "nav-2",
+    "label": "Shop",
+    "link": "/products",
+    "order": 2,
+    "children": [
+      {
+        "id": "nav-2-1",
+        "label": "All Products",
+        "link": "/products",
+        "order": 1
+      },
+      {
+        "id": "nav-2-2",
+        "label": "New Arrivals",
+        "link": "/new-arrivals",
+        "order": 2
+      },
+      {
+        "id": "nav-2-3",
+        "label": "Best Sellers",
+        "link": "/best-sellers",
+        "order": 3
+      },
+      {
+        "id": "nav-2-4",
+        "label": "Sale",
+        "link": "/sale",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "nav-3",
+    "label": "Categories",
+    "link": "/categories",
+    "order": 3,
+    "children": [
+      {
+        "id": "nav-3-1",
+        "label": "Electronics",
+        "link": "/categories/electronics",
+        "order": 1
+      },
+      {
+        "id": "nav-3-2",
+        "label": "Fashion",
+        "link": "/categories/fashion",
+        "order": 2
+      },
+      {
+        "id": "nav-3-3",
+        "label": "Home & Living",
+        "link": "/categories/home-living",
+        "order": 3
+      },
+      {
+        "id": "nav-3-4",
+        "label": "Sports",
+        "link": "/categories/sports",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "nav-4",
+    "label": "Deals",
+    "link": "/deals",
+    "order": 4
+  },
+  {
+    "id": "nav-5",
+    "label": "About",
+    "link": "/about",
+    "order": 5
+  },
+  {
+    "id": "nav-6",
+    "label": "Contact",
+    "link": "/contact",
+    "order": 6
+  }
+]
